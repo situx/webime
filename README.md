@@ -1,38 +1,23 @@
-Chinese Input Method Editor (IME)
-===========
+webime
+======
 
-A JavaScript jQuery plugin for building Chinese keyboard input capabilities natively into a website.
+WebIME - A webservice for providing an input method engine for any language given a file of words/characters and their frequencies.
 
-Introduction
------------
+Released under LGPLv3
 
-This Chinese IME is a JavaScript jQuery plugin that allows you to easily build the ability to type in Chinese characters into your website. The target users here are probably not native Chinese speakers who are very familiar with Chinese input methods, but rather those learning Chinese as a second language. Someone new to the language might not yet have installed an IME onto their OS, or might not yet know how to use it. If that sounds like your main audience, this is for you. This plugin is easy and intuitive to use for beginners and experts alike, and doesn't interfere with built-in OS input methods.
+Javascript Code modified from chinese-ime by Ironzeb
 
-Features
------------
+Webservice written in Java
 
- - Written in JavaScript as a jQuery plugin
- - Can be added to any `textarea` or `input`
- - Supports both simplified and traditional input methods
- - Smaller than 20kB, super fast
- - Completely stylable through CSS
- - Designed to be as unobtrusive as possible
- - Doesn't interfere with OS-builtin input methods
- - A range of different settings that can be passed as parameters
- - Licensed under the Lesser General Public Licence (LGPL), which means you can use it in any sort of project, commercial or otherwise, redistribute it and change it any way you want, as long as you retain the original copyright notice and keep that part of the code under the same LGPL license (so you can link to it from a commercial closed-source project, no problem)
- - Backend suggestions can be powered either by Google Translate or your own custom service, it's up to you. Google doesn't have an official API for this, so at least attribution would be advised if you go that route. However, I am not a lawyer. If you want to be 100% safe, write your own backend or hound me until I do.
- - Caches answers from the backend, increasing efficiency and reducing calls.
+In addition to the code provided you need:
 
-Demo
------------
+Apache Jersey Webservice
+Apache Xerces XML Parser (to deal with UTF16 languages)
 
-For a live demo of the plugin, go check out [ChineseIME.com](http://www.chineseime.com). There is also a demo included in this package in the `demo` folder.
+The code can be packed into a WAR file and can be run on (for example) an Apache Tomcat Server.
+IME files in the IME xml format (example given for Akkadian cuneiform) should be put in the folder "ime" located above the webserver execution folder. (e.g. tomcat/webapps)
 
-Tested in
------------
+Happy testing!
 
-I've so far tested this in Chrome (Chromium v.18) and Firefox 13+, where all works as expected. I don't really have a test suite available right now, so if anyone could contribute further test results, that would be great!
 
-Authors
------------
- - Herman Schaaf (herman [ at ] ironzebra [ 。] com)
+
