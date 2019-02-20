@@ -1,6 +1,8 @@
 webime
 ======
 
+[![Build Status](https://travis-ci.com/situx/webime.svg?branch=master)](https://travis-ci.com/situx/webime)
+
 WebIME - A webservice for providing an input method engine for any language given a file of words/characters and their frequencies.
 
 Javascript Code modified from chinese-ime by Ironzeb
